@@ -1,0 +1,17 @@
+
+def activities(A,F,N):
+    i =0
+    print("Selected activities are:\n")
+    print("A "+str(i+1))
+    for j in range (1,N,1) :
+        if A[j] >= F[i]:
+            print("A "+str(j+1))
+            i=j
+    
+def main():
+    a = [1,2,3,4,5,6,8,7]
+    f = [4,5,6,8,6,7,7,12,9]
+    n = len(a)
+    activities(a,f,n)
+
+main()
